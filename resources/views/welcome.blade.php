@@ -72,7 +72,7 @@
             <h1>MANAJEMEN TUGAS</h1>
             <p>Manajement Tugas Anda</p>
             <div class="d-flex">
-              <a href="#about" class="btn-get-started">Login</a>
+              <a href="#about" class="btn-get-started">Tentang Kami</a>
             </div>
           </div>
           <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="100">
