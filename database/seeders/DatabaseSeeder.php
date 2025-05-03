@@ -17,11 +17,28 @@ class DatabaseSeeder extends Seeder
         // User::factory(10)->create();
 
         User::create([
-            'nama'      => 'Test User',
-            'email'     => 'test@gmail.com',
+            'nama'      => 'M.Dwi Bahtiar',
+            'email'     => 'admin@gmail.com',
             'password'  => Hash::make('12345678'),
             'jabatan'   => 'Admin',
             'is_tugas'  => false,
         ]);
+
+        User::create([
+            'nama'      => 'Tono',
+            'email'     => 'tono@gmail.com',
+            'password'  => Hash::make('123456789'),
+            'jabatan'   => 'karyawan',
+            'is_tugas'  => false,
+        ]);
+
+        User::create([
+            'nama'      => 'Andri',
+            'email'     => 'andri@gmail.com',
+            'password'  => Hash::make('1234567890'),
+            'jabatan'   => 'karyawan',
+            'is_tugas'  => false,
+        ]);
+
     }
 }
