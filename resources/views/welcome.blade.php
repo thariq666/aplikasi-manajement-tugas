@@ -56,7 +56,12 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="{{ route('login')}}">LOGIN</a>
+      @auth
+        <a class="btn-getstarted" href="{{ route('dashboard')}}">DASHBOARD</a>
+      @else
+        <a class="btn-getstarted" href="{{ route('login')}}">LOGIN</a>
+      @endauth
+
 
     </div>
   </header>

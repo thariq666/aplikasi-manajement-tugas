@@ -2,7 +2,7 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{ route('welcome')}}">
                 <div class="sidebar-brand-icon">
                     <i class="fas fa-tasks"></i>
                 </div>
@@ -22,7 +22,8 @@
             <!-- Divider -->
             <hr class="sidebar-divider">
 
-            <!-- Heading -->
+            @if (auth()->user()->jabatan == 'Admin')
+                            <!-- Heading -->
             <div class="sidebar-heading">
                 Menu Admin
             </div>
@@ -34,23 +35,24 @@
             </li>
 
             <!-- Nav Item - Tables -->
-            <li class="nav-item {{ $TugasAdminUser ?? ''}}">
+            <li class="nav-item {{ $menuAdminTugas ?? ''}}">
                 <a class="nav-link" href="{{ route('tugas')}}">
                     <i class="fas fa-tasks"></i>
                     <span>Data Tugas</span></a>
             </li>
-            
-            <hr class="sidebar-divider">
+            @else
 
             <div class="sidebar-heading">
                 Menu Karyawan
             </div>
             <!-- Nav Item - Tables -->
-            <li class="nav-item">
-                <a class="nav-link" href="tables.html">
+            <li class="nav-item {{ $menuKaryawanTugas ?? ''}}">
+                <a class="nav-link" href="{{route('tugas')}}">
                     <i class="fas fa-tasks"></i>
                     <span>Data Tugas</span></a>
             </li>
+                
+            @endif
 
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">

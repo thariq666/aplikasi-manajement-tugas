@@ -13,11 +13,11 @@
                     <i class="fas fa-plus mr-2"></i>
                     Tambah Data
                 </a>
-                <a href="{{route('UserExcel')}}" class="btn btn-sm btn-success">
+                <a href="{{route('tugasExcel')}}" class="btn btn-sm btn-success" target="_blank">
                     <i class="fas fa-file-excel mr-2"></i>
                     Exel
                 </a>
-                <a href="{{route('UserPdf')}}" class="btn btn-sm btn-danger" target="_blank">
+                <a href="{{route('tugasPdf')}}" class="btn btn-sm btn-danger" target="_blank">
                     <i class="fas fa-file-pdf mr-2"></i>
                     PDF
                 </a>

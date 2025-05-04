@@ -24,11 +24,10 @@ class User extends Authenticatable
         'password',
     ];
 
-    public function tugas(){
-        return $this->hasOne(Tugas::class);
-    }
 
-    /**
+    public function tugas(){
+        return $this->hasMany(Tugas::class, 'user_id');
+    } /**
      * The attributes that should be hidden for serialization.
      *
      * @var array<int, string>
