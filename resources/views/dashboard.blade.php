@@ -14,7 +14,7 @@
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
                             <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                TOTAL USER</div>
+                                TOTAL ANGGOTA</div>
                                 <div class="h5 mb-0 font-weight-bold text-gray-800">{{ $totalUser }}</div>
                             </div>
                             <div class="col-auto">
@@ -30,7 +30,7 @@
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
                             <div class="text-xs font-weight-bold text-dark text-uppercase mb-1">
-                            TOTAL ADMIN</div>
+                            TOTAL KADIV</div>
                             <div class="h5 mb-0 font-weight-bold text-gray-800">{{ $totalAdmin }}</div>
                         </div>
                         <div class="col-auto">
@@ -46,7 +46,7 @@
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
                             <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
-                            TOTAL KARYAWAN</div>
+                            TOTAL PROKER</div>
                             <div class="h5 mb-0 font-weight-bold text-gray-800">{{ $totalKaryawan }}</div>
                         </div>
                         <div class="col-auto">
@@ -119,5 +119,5 @@
     </div>
     @endif
     </div>
-        
+
 @endsection

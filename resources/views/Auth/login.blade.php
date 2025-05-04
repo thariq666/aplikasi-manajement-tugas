@@ -9,7 +9,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>M-TUGAS | LOGIN</title>
+        <title>HIMATEK | LOGIN</title>
 
         <!-- Custom fonts for this template-->
         <link href="{{ asset('sbadmin2/vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css">
@@ -39,7 +39,7 @@
                                 <div class="col-xl-12">
                                     <div class="p-5">
                                         <div class="text-center">
-                                            <h1 class="h4 text-gray-900 mb-4">Selamat Datang!</h1>
+                                            <h1 class="h4 text-gray-900 mb-4">WELCOME</h1>
                                         </div>
                                         <form class="user" method="POST" action="{{ route('loginProses') }}">
                                             @csrf
