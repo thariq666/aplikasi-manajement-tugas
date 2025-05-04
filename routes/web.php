@@ -22,5 +22,14 @@ Route::get('/user/edit/{id}', [UserController::class, 'edit'])->name('userEdit')
 Route::post('/user/update/{id}', [UserController::class, 'update'])->name('userUpdate');
 Route::get('/user/destroy/{id}', [UserController::class, 'destroy'])->name('userDestroy');
 Route::post('/user/store', [UserController::class, 'store'])->name('userStore');
+
+Route::post('/tugas/store', [TugasController::class, 'store'])->name('tugasStore');
+Route::get('/tugas/edit/{id}', [TugasController::class, 'edit'])->name('tugasEdit');
+Route::post('/tugas/update/{id}', [TugasController::class, 'update'])->name('tugasUpdate');
+Route::get('/tugas/destroy/{id}', [TugasController::class, 'destroy'])->name('tugasDestroy');
 Route::get('/tugas', [TugasController::class, 'index'])->name('tugas');
+Route::get('/tugas/create', [TugasController::class, 'create'])->name('tugasCreate');
+
+Route::get('/user/excel', [UserController::class, 'excel'])->name('UserExcel');
+Route::get('/user/pdf', [UserController::class, 'pdf'])->name('UserPdf');
 });
