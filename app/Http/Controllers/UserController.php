@@ -83,6 +83,12 @@ class UserController extends Controller
         $user->nama = $request->nama;
         $user->email = $request->email;
         $user->jabatan = $request->jabatan;
+
+        if ($request->jabatan=='admin'){
+            $user->is_tugas = false;
+            $user->tugas()->delete();
+        }
+
         if ($request->filled('password')) {
             $user->password = Hash::make($request->password);
         }
